@@ -11,21 +11,35 @@
     <script type="text/javascript" src="./script.js">
 </script>
     <div>
-		<label for="name">Name<input type="text" placeholder="Enter full name" required/></label><br/>
-		<label for="email">Email<input type="email" placeholder="@gmail.com" required/></label><br/>
-		<label for="gender">Gender<input type="radio"  name="gender" value="male"/>Male
-		<input type="radio"  name="gender" value="female"/>female
-		<input type="radio"  name="gender" value="others"/>others</label><br/>
-			Laptop Brands <select id="laptop"><option>Apple</option>
+		<label for="name">Name</label><input type="text" id="name"  required/></div>
+		<div><label for="email">Email</label><input type="email" id="email" required/></div>
+		<div><label for="Gender">Male</label>
+			<input type="radio"  name="gender" id="Gender" required/>
+			<label for="Gender">Female</label>
+			<input type="radio"  name="gender" id="Gender" required/>
+			<div>
+			<div> <label for="lap">Laptop Brands</label>
+				<select id="lap" name="lap" required><option>Apple</option>
 									<option>Asus</option>
 									<option>HP</option>
-								</select><br/>
-    <label for="age">Age<input required type="number"/></label><br/>
-		  <label for="dob">DOB<input required type="date"/></label><br/>
-		<label for="password">Password<input required type="password"/></label><br/>
-  <input type="submit"/>
+								</select></div>
+				
+   <div> <label for="age">Age </label>
+	   <input required type="number" id="age"/></div>
+
+				
+		  <div> <label for="dob">DOB</label>
+			  <input required type="date" id="dob"/></div>
+
+				
+		<div><label for="password">Password</label>
+			<input required type="password" id="password"/></div>
+				
+  <div>
+	 <button type="submit">Submit</button>
+  </div>
 		
-	</div>
+	
 </body>
 
 </html>
