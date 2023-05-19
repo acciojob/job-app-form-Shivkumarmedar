@@ -10,23 +10,33 @@
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
-	<form> 
+	<form id="my-form" method="post"> 
     <div>
-		<label for="name">Name</label><input type="text" id="name"  required/></div>
-		<div><label for="email">Email</label><input type="email" id="email" required/></div>
-		<div><label for="Gender">Male</label>
-			<input type="radio"  name="gender" id="Gender" required/>
-			<label for="Gender">Female</label>
-			<input type="radio"  name="gender" id="Gender" required/>
+		<label for="name">Name</label>
+		<input type="text" id="name"  required/></div>
+		
+		<div>
+			<label for="email">Email</label>
+			<input type="email" id="email" required/></div>
+		
+		<div>
+			<label for="Genderm">Male</label>
+			<input type="radio"  name="gender" id="Genderm" required/>
+			<label for="Genderf">Female</label>
+			<input type="radio"  name="gender" id="Genderf" required/>
+		</div>
+		
 			<div>
-			<div> <label for="lap">Laptop Brands</label>
-				<select id="lap" name="lap" required><option>Apple</option>
-									<option>Asus</option>
-									<option>HP</option>
+				<label for="lap">Laptop Brands</label>
+				<select id="lap" name="lap" required>
+					<option value="1">Apple</option>
+					<option value="2">Asus</option>
+					<option value="3">HP</option>
 								</select></div>
 				
-   <div> <label for="age">Age </label>
-	   <input required type="number" id="age"/></div>
+       <div> <label for="age">Age</label>
+	   <input required type="number" id="age" min="0"/>
+	   </div>
 
 				
 		  <div> <label for="dob">DOB</label>
@@ -37,7 +47,7 @@
 			<input required type="password" id="password"/></div>
 				
   <div>
-	 <button type="submit">Submit</button>
+	 <button>Submit</button>
   </div>
 		
 	</form>
